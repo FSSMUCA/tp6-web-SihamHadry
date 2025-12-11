@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> 
+        <meta charset="utf-8">
+        <title>Mini calucatrice</title>
+    </head>
+    <body>
+<header>
+    <h1>Calucatrice en ligne </h1>
+</header>
+    <main> 
+        <form id="calcForm">
+            <label for="nombreA">Nombre A : </label><br>
+            <input type="number" id="nombreA" name="nombreA" required>
+             <label for="nombreB">Nombre B :</label><br>
+      <input type="number" id="nombreB" name="nombreB" required>
+
+      <label for="operation">Opération :</label>
+      <select id="operation" name="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">÷</option>
+      </select>
+
+      <button type="submit">Calculer</button>
+    </form>
+
+ <div class="erreurs" id="erreurs"></div>
+
+    
+    <section id="historique">
+      <h2>Historique des opérations</h2>
+      <ul id="listeHistorique"></ul>
+    </section>
+  
+
+        </form>
+    </main>
+        
+
+    </body>
+</html>
